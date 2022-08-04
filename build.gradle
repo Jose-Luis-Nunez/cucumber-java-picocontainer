@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id("se.thinkcode.cucumber-runner") version "0.0.11"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
+//    testImplementation("info.cukes:cucumber-picocontainer:1.2.5")
+//    testImplementation("info.cukes:cucumber-junit:1.2.5")
+//    testImplementation("info.cukes:cucumber-java:1.2.5")
+    testImplementation("io.cucumber:cucumber-java:7.5.0")
+    testImplementation("io.cucumber:cucumber-picocontainer:7.5.0")
+    testImplementation("org.hamcrest:hamcrest-library:2.2")
+}
