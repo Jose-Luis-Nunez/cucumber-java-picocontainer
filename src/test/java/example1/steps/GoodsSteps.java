@@ -1,12 +1,12 @@
-package steps;
+package example1.steps;
 
+import example1.model.Customer;
+import example1.model.Item;
+import example1.model.World;
 import io.cucumber.java.en.Given;
-import model.Customer;
-import model.Item;
-import model.World;
 
 public class GoodsSteps {
-    private final World world;
+    private World world;
 
     public GoodsSteps(World world) {
         this.world = world;

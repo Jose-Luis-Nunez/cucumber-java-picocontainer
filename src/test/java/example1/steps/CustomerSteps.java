@@ -1,8 +1,8 @@
-package steps;
+package example1.steps;
 
+import example1.model.World;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import model.World;
 import org.hamcrest.MatcherAssert;
 
 import static org.hamcrest.CoreMatchers.is;

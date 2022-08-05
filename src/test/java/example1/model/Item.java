@@ -1,14 +1,15 @@
-package model;
+package example1.model;
 
 public class Item {
-    private final String itemType;
-    private final int price;
+    private String itemType;
+    private int price;
+
+    public String getItemType(){
+        return itemType;
+    }
 
     public int getPrice(){
         return price;
-    }
-    public String getItemType(){
-        return itemType;
     }
 
     public Item(String itemType, int price) {

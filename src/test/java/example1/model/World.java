@@ -1,4 +1,4 @@
-package model;
+package example1.model;
 
 public class World {
     private Customer customer;
