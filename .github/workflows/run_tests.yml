@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Gradle Wraper Cache
+      - name: Gradle Wrapper Cache
         uses: actions/cache@v1
         with:
           path: ~/.gradle/wrapper/
