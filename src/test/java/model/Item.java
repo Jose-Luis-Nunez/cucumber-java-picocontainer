@@ -1,13 +1,16 @@
+package model;
+
 public class Item {
-    String itemType;
-    int price;
+    private final String itemType;
+    private final int price;
 
     public int getPrice(){
         return price;
     }
-    public Item(String itemType) {
-        this.itemType = itemType;
+    public String getItemType(){
+        return itemType;
     }
+
     public Item(String itemType, int price) {
         this.itemType = itemType;
         this.price = price;
@@ -15,6 +18,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "itemType: " + itemType + " , price: " + price;
+        return itemType;
     }
 }
