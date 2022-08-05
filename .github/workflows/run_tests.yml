@@ -16,7 +16,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.gradle/wrapper/
-          key: ${{ runner.OS }}-gradle-wraper-cache
+          key: ${{ runner.OS }}-gradle-wrapper-cache
 
       - name: Set up JDK
         uses: actions/setup-java@v1
