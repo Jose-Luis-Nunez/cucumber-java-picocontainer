@@ -8,6 +8,10 @@ public class Customer {
         this.name = name;
     }
 
+    public String getName(){
+        return name;
+    }
+
     public void refund(int refund) {
         this.refund = refund;
     }

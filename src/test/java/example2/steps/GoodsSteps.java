@@ -13,8 +13,8 @@ public class GoodsSteps {
         this.item = item2;
     }
 
-    @Given("^that2 (.*) bought a (.*) for \\$(\\d+)$")
-    public void buyItem(String name, String itemType, int price) {
+    @Given("(.*) bought a (.*) for \\$(\\d+) in store$")
+    public void buy(String name, String itemType, int price) {
         customer.setName(name);
         item.setItemType(itemType);
         item.setPrice(price);

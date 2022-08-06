@@ -1,6 +1,7 @@
 package example1.steps;
 
 import example1.model.World;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.MatcherAssert;
@@ -19,7 +20,7 @@ public class CustomerSteps {
         MatcherAssert.assertThat(world.getItem().getItemType(), is(itemType));
     }
 
-    @When("^customer shows receipt$")
+    @And("^customer shows receipt$")
     public void showReceipt() {
         world.getCustomer().refund(world.getItem().getPrice());
     }
