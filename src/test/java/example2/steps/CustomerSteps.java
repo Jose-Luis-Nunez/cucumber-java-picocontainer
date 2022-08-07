@@ -1,7 +1,7 @@
 package example2.steps;
 
-import example2.model2.CustomerContainer;
-import example2.model2.ItemContainer;
+import example2.model2.Customer;
+import example2.model2.Item;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,10 +10,10 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CustomerSteps {
-    private CustomerContainer customer;
-    private ItemContainer item;
+    private Customer customer;
+    private Item item;
 
-    public CustomerSteps(CustomerContainer customer, ItemContainer item) {
+    public CustomerSteps(Customer customer, Item item) {
         this.customer = customer;
         this.item = item;
     }

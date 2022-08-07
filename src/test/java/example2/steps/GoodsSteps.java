@@ -1,16 +1,16 @@
 package example2.steps;
 
-import example2.model2.CustomerContainer;
-import example2.model2.ItemContainer;
+import example2.model2.Customer;
+import example2.model2.Item;
 import io.cucumber.java.en.Given;
 
 public class GoodsSteps {
-    private CustomerContainer customer;
-    private ItemContainer item;
+    private Customer customer;
+    private Item item;
 
-    public GoodsSteps(CustomerContainer customer2, ItemContainer item2) {
-        this.customer = customer2;
-        this.item = item2;
+    public GoodsSteps(Customer customer, Item item) {
+        this.customer = customer;
+        this.item = item;
     }
 
     @Given("(.*) bought a (.*) for \\$(\\d+) in store$")
