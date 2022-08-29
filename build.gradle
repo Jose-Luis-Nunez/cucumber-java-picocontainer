@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    def cucumberVersion = "7.5.0"
+    def cucumberVersion = '7.6.0'
     def hamcrestVersion = "2.2"
 
     testImplementation("io.cucumber:cucumber-java:$cucumberVersion")
